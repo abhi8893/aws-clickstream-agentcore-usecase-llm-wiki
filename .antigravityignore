@@ -1,0 +1,24 @@
+# Ignore Firebase plugin and its associated skills
+firebase
+firebase-ai-logic-basics
+firebase-app-hosting-basics
+firebase-auth-basics
+firebase-basics
+firebase-crashlytics
+firebase-data-connect
+firebase-firestore
+firebase-hosting-basics
+firebase-remote-config-basics
+firebase-security-rules-auditor
+xcode-project-setup
+
+# Ignore Chrome and modern web guidance plugins and their associated skills
+chrome-devtools-plugin
+modern-web-guidance-plugin
+chrome-extensions
+chrome-devtools
+a11y-debugging
+debug-optimize-lcp
+memory-leak-debugging
+troubleshooting
+modern-web-guidance
