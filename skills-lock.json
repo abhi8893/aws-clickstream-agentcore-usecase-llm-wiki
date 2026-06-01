@@ -37,6 +37,12 @@
       "skillPath": "skills/cloudwatch/SKILL.md",
       "computedHash": "3afe26de329a3f53cd3a963b37ca1f9758721ab108c2141295aef0c57597dd70"
     },
+    "google-tag-manager": {
+      "source": "thatrebeccarae/claude-marketing",
+      "sourceType": "github",
+      "skillPath": "skills/google-tag-manager/SKILL.md",
+      "computedHash": "375faa0eb0736aa9d0435d60b97f71c59f75409e35942676c2aff6fce0424287"
+    },
     "grafana-dashboards": {
       "source": "sickn33/antigravity-awesome-skills",
       "sourceType": "github",
