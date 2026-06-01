@@ -1,3 +1,7 @@
+---
+description: Track parked topics in the backlog and manage promotion to active research with priority levels.
+---
+
 # /wiki-backlog
 
 Manage the research backlog in `backlog.md`. Topics here are parked — tracked but not researched until explicitly promoted.

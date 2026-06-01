@@ -1,3 +1,7 @@
+---
+description: Evolve the workflow itself based on user feedback about instructions, conventions, and process improvements.
+---
+
 # /workflow-improve
 
 Incorporate user feedback to improve the llm-wiki workflow itself.

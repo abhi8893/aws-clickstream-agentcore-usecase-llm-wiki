@@ -1,3 +1,7 @@
+---
+description: Search the wiki to answer questions with citations and optionally save answers as new pages.
+---
+
 # /wiki-query
 
 Query the wiki and optionally save the answer as a new wiki page.

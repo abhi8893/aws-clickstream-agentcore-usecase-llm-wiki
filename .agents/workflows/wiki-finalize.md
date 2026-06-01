@@ -1,3 +1,7 @@
+---
+description: Integrate processed documents into the wiki with cross-link resolution, batch grilling, and impact analysis.
+---
+
 # /wiki-finalize
 
 Integrate one or more processed documents into `99-wiki/`, resolving all cross-links.

@@ -1,3 +1,7 @@
+---
+description: Health-check all three wiki layers for registry compliance, broken links, and inconsistencies.
+---
+
 # /wiki-lint
 
 Health-check the wiki across all three layers. Report findings as a numbered list with suggested fixes.

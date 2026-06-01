@@ -1,3 +1,7 @@
+---
+description: Incorporate review callout feedback from documents and apply structural changes as needed.
+---
+
 # /wiki-refine
 
 Incorporate `> [!REVIEW]` callout feedback from processed or wiki layer files.

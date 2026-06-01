@@ -1,3 +1,7 @@
+---
+description: Register raw sources into the index with a light sniff to infer metadata and source type.
+---
+
 # /wiki-ingest
 
 Register a raw source document into `01-raw/index.md` using a light sniff.

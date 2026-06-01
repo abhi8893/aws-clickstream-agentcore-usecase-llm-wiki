@@ -1,5 +1,5 @@
 ---
-description: 
+description: Extract and structure raw sources into organized processed documents with grilling feedback and full content analysis.
 ---
 
 # /wiki-process

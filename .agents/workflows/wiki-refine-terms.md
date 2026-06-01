@@ -1,3 +1,7 @@
+---
+description: Audit the registry for duplicates, drift, and cross-section inconsistencies with optional deep file scanning.
+---
+
 # /wiki-refine-terms
 
 Registry hygiene command. Detects duplicates, alias drift, and inconsistencies in `registry.md` using fast grep/find-based scanning. Does NOT re-read all wiki files by default — use `--deep` to force full content analysis.
