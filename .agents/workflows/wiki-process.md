@@ -64,4 +64,17 @@ Process one or more raw sources into structured documents in `02-processed/`.
 
 4. **Propose registry additions** for any new terms encountered — confirm before writing
 
-5. **Report** — "Processed: [list of created files]. Review at `02-processed/<folder>/overview.md`. Add `> [!REVIEW]` callouts for feedback, then run `/wiki-finalize`."
+5. **Backlog suggestions** — if full content read surfaced tangential topics clearly out of scope for this wiki's purpose, offer to park them with a suggested priority:
+   ```
+   Encountered tangential topics not central to this source:
+   1. "cdk-vs-cloudformation" — IaC tooling mentioned in passing [suggested: if-needed]
+   2. "service-mesh" — referenced briefly in networking context [suggested: distant]
+   Add any to backlog? (list numbers / n)
+   ```
+   Only flag genuinely tangential concepts — not every unfamiliar term. Never auto-add, never research them.
+   Priority guidance for suggestions:
+   - `near` — directly adjacent to the wiki's scope, clearly useful soon
+   - `distant` — related but no concrete need visible yet
+   - `if-needed` — only tangentially connected, would need a specific forcing reason
+
+6. **Report** — "Processed: [list of created files]. Review at `02-processed/<folder>/overview.md`. Add `> [!REVIEW]` callouts for feedback, then run `/wiki-finalize`."

@@ -66,4 +66,13 @@ Register a raw source document into `01-raw/index.md` using a light sniff.
    - Notes: <brief description>
    ```
 
-8. **Confirm** — report back: "Registered. Run `/wiki-process <filepath>` when ready to extract."
+8. **Backlog suggestions** — if the light sniff surfaced tangential topics clearly outside the source's main scope, offer to park them with a suggested priority:
+   ```
+   Encountered tangential topics not central to this source:
+   1. "cdk-vs-cloudformation" — IaC tooling mentioned in passing [suggested: if-needed]
+   2. "service-mesh" — networking concept referenced briefly [suggested: distant]
+   Add any to backlog? (list numbers / n)
+   ```
+   Only suggest genuinely tangential concepts — not every term in the source. If user confirms, run `/wiki-backlog add` for each. Never auto-add.
+
+9. **Confirm** — report back: "Registered. Run `/wiki-process <filepath>` when ready to extract."

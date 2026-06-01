@@ -25,6 +25,7 @@ purpose.md       ← why this wiki exists
 - **Propose registry additions, never silently introduce new terms**
 - **Use `> [!REVIEW]` callout syntax for inline feedback** — strip after incorporating
 - **Brain dump sources are incomplete and potentially inaccurate** — structure and scaffold only, never assert hard facts from them
+- **Never research, process, or create wiki pages for topics listed in `backlog.md`** — they are parked until the user explicitly promotes them via `/wiki-backlog promote <slug>` or says "research backlog: `<slug>`"
 
 ## Frontmatter field definitions
 
@@ -56,6 +57,7 @@ Every page across all three layers uses these four metadata fields. Use only can
 | `/wiki-query "<question>"` | Query wiki + optional save-back as new page |
 | `/wiki-lint` | Health-check all three layers, report issues |
 | `/refine-terms` | Registry hygiene — detect duplicates, alias drift, propose normalizations |
+| `/wiki-backlog <add\|list\|promote\|remove>` | Manage parked topics — track without researching |
 | `/workflow-improve "<feedback>"` | Evolve the workflow itself |
 
 Full command specs live in `.agents/workflows/`. Symlinked to `.claude/commands/`.
