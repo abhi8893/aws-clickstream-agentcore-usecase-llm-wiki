@@ -34,6 +34,11 @@ Register a raw source document into `01-raw/index.md` using a light sniff.
    Any corrections or additions?
    ```
 
+4b. **Ask intent questions** — before writing the index entry, ask 1-2 targeted questions:
+   - "What's the main thing you want this source to contribute to the wiki?"
+   - "Anything in here you'd want skipped or de-emphasized during processing?"
+   Store answers in the `notes` field so `/wiki-process` picks them up automatically.
+
 5. **Propose registry additions** — if any new canonical terms are needed across any section, present them:
    ```
    New terms to add to registry.md:

@@ -15,6 +15,16 @@ Integrate one or more processed documents into `99-wiki/`, resolving all cross-l
 
 2. **Read the processed document(s)** — `overview.md` + all section files
 
+2b. **Share a brief impact summary** before asking any decisions:
+   ```
+   Found in <source>:
+   - <key concept / fact 1>
+   - <key concept / fact 2>
+   - <key concept / fact 3>
+   Wiki impact: N new pages likely, M existing pages to update, K conflicts spotted.
+   ```
+   This primes the grill round so your answers are more informed.
+
 3. **Search existing wiki** for overlap:
    - Grep `99-wiki/index.md` for matching tags, domains, concepts
    - Read frontmatter of any matching pages (do not read full body yet)

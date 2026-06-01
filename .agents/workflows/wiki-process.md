@@ -27,27 +27,53 @@ Process one or more raw sources into structured documents in `02-processed/`.
 
    a. **Update raw index status** → `in-progress`
 
-   b. **Full content read** — use the appropriate strategy:
+   b. **Light sniff** — re-read just enough to prime context (even if already ingested):
+      - PDF: pages 1-3
+      - Markdown / Chat / Website: first 100 lines
+      - Brain Dump: first 50 lines
+
+   c. **First grill round** — based on sniff + any notes from `/wiki-ingest`, ask 2-3 questions before reading further:
+      - "What's the most important concept to capture from this source?"
+      - "Are there sections to skip or treat as low-priority?"
+      - "Any cross-links you already know this should have?"
+      Wait for answers before proceeding.
+
+   d. **Full content read** — use the appropriate strategy:
       - PDF: read all pages using `pages` parameter in batches if large
       - Markdown: read full file
       - Chat: read full file
       - Website: read full file
-      - Brain Dump: Treat information as incomplete, and potentially in-accurate. Only use to structure and refine. DO NOT create hard facts based on these. 
+      - Brain Dump: Treat information as incomplete, and potentially in-accurate. Only use to structure and refine. DO NOT create hard facts based on these.
       - If images are encountered: read them visually alongside text
 
-   c. **Determine structure** — apply size rule:
+   e. **Share summary** — present 3-5 bullet points of what you found before writing anything:
+      ```
+      Summary of <source>:
+      - <key finding 1>
+      - <key finding 2>
+      - <key finding 3>
+      Proposed structure: overview.md [+ section-1.md, section-2.md if large]
+      ```
+
+   f. **Second grill round** — ask targeted follow-ups based on the summary:
+      - "Does this structure match what you expected?"
+      - "Any facts here that contradict something you already know?"
+      - "Anything missing you'd expect to find in this source?"
+      Wait for answers before writing any files.
+
+   g. **Determine structure** — apply size rule (incorporating grill answers):
       - Under ~300 lines or 3 major topics → `overview.md` only
       - Over threshold → `overview.md` + one `section-N.md` per major topic
 
-   d. **Create processed folder**: `02-processed/<source-name-kebab>/`
+   h. **Create processed folder**: `02-processed/<source-name-kebab>/`
 
-   e. **Write `overview.md`** with full frontmatter + Summary + Key Concepts + Sections list + Glossary
+   i. **Write `overview.md`** with full frontmatter + Summary + Key Concepts + Sections list + Glossary
 
-   f. **Write `section-N.md` files** (if needed) with frontmatter + Summary + Content + Glossary + Related
+   j. **Write `section-N.md` files** (if needed) with frontmatter + Summary + Content + Glossary + Related
 
-   g. **Update `01-raw/index.md`** entry: set `status: processed`, add `processed_at: 02-processed/<folder>/`
+   k. **Update `01-raw/index.md`** entry: set `status: processed`, add `processed_at: 02-processed/<folder>/`
 
-   h. **Append to `02-processed/index.md`**:
+   l. **Append to `02-processed/index.md`**:
       ```markdown
       ## <source-name>
       - **filepath**: `02-processed/<folder>/`
@@ -60,7 +86,7 @@ Process one or more raw sources into structured documents in `02-processed/`.
       - **wiki_pages**: `[]`
       ```
 
-   i. **Append to `02-processed/log.md`** and `01-raw/log.md`
+   m. **Append to `02-processed/log.md`** and `01-raw/log.md`
 
 4. **Propose registry additions** for any new terms encountered — confirm before writing
 
