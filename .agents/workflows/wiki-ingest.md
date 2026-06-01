@@ -10,7 +10,7 @@ Register a raw source document into `01-raw/index.md` using a light sniff.
 
 ## Steps
 
-1. **Read `registry.md`** — load canonical domains, tags, concepts before writing anything
+1. **Read `registry.md`** — load canonical domains, tags, concepts, components before writing anything
 
 2. **Detect file type** from extension:
    - `.pdf` → PDF
@@ -29,14 +29,17 @@ Register a raw source document into `01-raw/index.md` using a light sniff.
    Title: <inferred title>
    Domain: [<inferred domains>]
    Tags: [<inferred tags>]
+   Components: [<inferred components — which parts of the system does this source relate to?>]
    Notes: <inferred one-line description>
    Any corrections or additions?
    ```
 
-5. **Propose registry additions** — if any new canonical terms are needed, present them:
+5. **Propose registry additions** — if any new canonical terms are needed across any section, present them:
    ```
    New terms to add to registry.md:
    - Tags: ["new-tag"] under <section>
+   - Components: ["new-component"] — <description>, parent: <parent or —>
+   - Concepts: ["new-concept"] — <brief definition>
    Confirm? (y/n / suggest alternative)
    ```
    Write to `registry.md` only after confirmation.

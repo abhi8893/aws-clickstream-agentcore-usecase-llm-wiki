@@ -16,7 +16,7 @@ Process one or more raw sources into structured documents in `02-processed/`.
 
 ## Steps
 
-1. **Read `registry.md`** and **`schema.md`** — load conventions before writing
+1. **Read `registry.md`** and **`schema.md`** — load all canonical domains, tags, concepts, and components before writing anything
 
 2. **Resolve targets** — from filepath or filter:
    - Single file: find its `01-raw/index.md` entry
@@ -54,6 +54,7 @@ Process one or more raw sources into structured documents in `02-processed/`.
       - **filepath_raw**: `<original raw path>`
       - **description**: <one-line from overview summary>
       - **concepts**: [concept1, concept2]
+      - **components**: [component1, component2]
       - **tags**: [tag1, tag2]
       - **status**: `draft`
       - **wiki_pages**: `[]`
