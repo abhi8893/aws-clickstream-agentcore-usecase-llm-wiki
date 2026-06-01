@@ -5,6 +5,12 @@ Format: `## [YYYY-MM-DD] <operation> | <title>`
 
 ---
 
+## [2026-06-02] refine | components
+
+- Action: refine
+- Source: `02-processed/components/overview.md`
+- Notes: Resolved 1 REVIEW callout — expanded Glossary from 4 to 20 terms covering all 12 components and key associated infrastructure (MSK, Firehose, ADOT, Sidecar, Grafana, QuickSight, etc.)
+
 ## [2026-06-01] process | components
 
 - Action: process
