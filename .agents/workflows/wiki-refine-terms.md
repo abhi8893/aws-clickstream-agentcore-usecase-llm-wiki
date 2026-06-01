@@ -1,4 +1,4 @@
-# /refine-terms
+# /wiki-refine-terms
 
 Registry hygiene command. Detects duplicates, alias drift, and inconsistencies in `registry.md` using fast grep/find-based scanning. Does NOT re-read all wiki files by default — use `--deep` to force full content analysis.
 
@@ -7,10 +7,10 @@ Distinct from `/wiki-lint` — this operates on the registry itself, not on fron
 ## Usage
 
 ```
-/refine-terms                    # fast mode: grep-based registry audit only
-/refine-terms --section tags     # scope to one section (domains|tags|concepts|components)
-/refine-terms --deep             # deep mode: also scans all frontmatter files for usage evidence
-/refine-terms --deep --section concepts  # deep + scoped
+/wiki-refine-terms                    # fast mode: grep-based registry audit only
+/wiki-refine-terms --section tags     # scope to one section (domains|tags|concepts|components)
+/wiki-refine-terms --deep             # deep mode: also scans all frontmatter files for usage evidence
+/wiki-refine-terms --deep --section concepts  # deep + scoped
 ```
 
 ---
@@ -128,7 +128,7 @@ Terms appearing in frontmatter that are neither canonical nor alias in the regis
 ## Output format
 
 ```
-/refine-terms [fast|deep] complete — N issues found
+/wiki-refine-terms [fast|deep] complete — N issues found
 
 FAST CHECKS (registry-only):
   A. Cross-section duplicates: N found

@@ -5,7 +5,7 @@ Single source of truth for canonical terms across all three layers (01-raw, 02-p
 **Rules:**
 - Always use canonical forms in `domain:`, `tags:`, `concepts:`, `components:` frontmatter fields
 - LLM proposes new entries during `/wiki-ingest` or `/wiki-process` — human confirms before writing
-- Run `/refine-terms` to detect duplicates and alias drift across the registry
+- Run `/wiki-refine-terms` to detect duplicates and alias drift across the registry
 - Run `/wiki-lint` to detect non-canonical terms in frontmatter across all files
 - Add deprecated terms to the **Normalized** table so they are never reintroduced
 

@@ -56,7 +56,7 @@ Every page across all three layers uses these four metadata fields. Use only can
 | `/wiki-refine <filepath\|--layer\|--all>` | Incorporate `> [!REVIEW]` callout feedback |
 | `/wiki-query "<question>"` | Query wiki + optional save-back as new page |
 | `/wiki-lint` | Health-check all three layers, report issues |
-| `/refine-terms` | Registry hygiene — detect duplicates, alias drift, propose normalizations |
+| `/wiki-refine-terms` | Registry hygiene — detect duplicates, alias drift, propose normalizations |
 | `/wiki-backlog <add\|list\|promote\|remove>` | Manage parked topics — track without researching |
 | `/workflow-improve "<feedback>"` | Evolve the workflow itself |
 
