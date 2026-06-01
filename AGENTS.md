@@ -1,4 +1,4 @@
-# CLAUDE.md
+# AGENTS.md
 
 AI assistant entrypoint for the AWS Clickstream + AgentCore observability wiki.
 
@@ -12,7 +12,7 @@ A research knowledge base and architecture reference for designing a solution th
 01-raw/          ← immutable source documents (never modify)
 02-processed/    ← structured extractions, one folder per source
 99-wiki/         ← synthesized architecture guidance (publishable output)
-registry.md      ← canonical domains, tags, concepts — always read before writing frontmatter
+registry.md      ← canonical domains, tags, concepts, components — always read before writing frontmatter
 schema.md        ← full conventions for all three layers
 purpose.md       ← why this wiki exists
 ```
@@ -24,6 +24,26 @@ purpose.md       ← why this wiki exists
 - **Always read `schema.md` at the start of any wiki operation** — it contains all format specs
 - **Propose registry additions, never silently introduce new terms**
 - **Use `> [!REVIEW]` callout syntax for inline feedback** — strip after incorporating
+- **Brain dump sources are incomplete and potentially inaccurate** — structure and scaffold only, never assert hard facts from them
+
+## Frontmatter field definitions
+
+Every page across all three layers uses these four metadata fields. Use only canonical values from `registry.md`.
+
+| Field | Answers | Example values |
+|---|---|---|
+| `domain` | *"What topic space does this live in?"* | `clickstream`, `agentcore`, `data-pipeline`, `observability`, `web-app`, `dashboards` |
+| `tags` | *"What specific technologies/services are involved?"* | `kinesis-data-firehose`, `google-tag-manager`, `opentelemetry`, `flink` |
+| `concepts` | *"What generic, transferable idea or technique?"* | `streaming-ingestion`, `server-side-tagging`, `event-correlation`, `otel-instrumentation` |
+| `components` | *"Which part of OUR architecture does this relate to?"* | `clickstream-ingestion-pipeline`, `agent-otel-backend`, `metrics-dashboard` |
+
+**Key distinctions:**
+- `tags` = WHAT tools/services (e.g. `kinesis-data-firehose`)
+- `concepts` = WHAT idea/technique (e.g. `streaming-ingestion`)
+- `components` = WHICH part of the system (e.g. `clickstream-ingestion-pipeline`)
+- A single page about Firehose buffering config uses all three: `tags: [kinesis-data-firehose]`, `concepts: [streaming-ingestion]`, `components: [clickstream-ingestion-pipeline]`
+
+**Components are function-level, not variant-level.** `clickstream-ingestion-pipeline` covers all implementation variants (MSK, Firehose, etc.). Which services are used → `tags`. Which variant was chosen → `decision-record` page type.
 
 ## Workflow commands
 
@@ -35,6 +55,7 @@ purpose.md       ← why this wiki exists
 | `/wiki-refine <filepath\|--layer\|--all>` | Incorporate `> [!REVIEW]` callout feedback |
 | `/wiki-query "<question>"` | Query wiki + optional save-back as new page |
 | `/wiki-lint` | Health-check all three layers, report issues |
+| `/refine-terms` | Registry hygiene — detect duplicates, alias drift, propose normalizations |
 | `/workflow-improve "<feedback>"` | Evolve the workflow itself |
 
 Full command specs live in `.agents/workflows/`. Symlinked to `.claude/commands/`.

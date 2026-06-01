@@ -11,7 +11,7 @@ Also read `registry.md` for canonical terms before writing any frontmatter.
 01-raw/          ← immutable source documents (never modify)
 02-processed/    ← structured extractions, 1:1 with raw sources
 99-wiki/         ← synthesized architecture guidance (the publishable output)
-registry.md      ← global canonical terms (domains, tags, concepts)
+registry.md      ← global canonical terms (domains, tags, concepts, components)
 purpose.md       ← why this wiki exists and what it's building toward
 schema.md        ← this file
 ```
@@ -99,6 +99,7 @@ source_type: pdf | markdown | chat | website
 domain: [domain1, domain2]
 tags: [tag1, tag2]
 concepts: [concept1, concept2]
+components: [component1, component2]
 sections:
   - id: section-1
     title: "Section title"
@@ -139,6 +140,7 @@ parent: "[[overview]]"
 domain: [domain1]
 tags: [tag1, tag2]
 concepts: [concept1]
+components: [component1]
 status: draft | reviewed | done
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -182,6 +184,7 @@ LLM strips these blocks after incorporating feedback during `/wiki-refine`.
 - **filepath_raw**: `01-raw/<subfolder>/<filename>`
 - **description**: <brief description from overview>
 - **concepts**: [concept1, concept2]
+- **components**: [component1, component2]
 - **tags**: [tag1, tag2]
 - **status**: `draft | reviewed | done`
 - **wiki_pages**: `[]` ← filled in after /wiki-finalize
@@ -240,6 +243,8 @@ type: architecture | concept | pattern | decision-record | how-to-guide | data-p
 title: "Human-readable title"
 domain: [domain1, domain2]
 tags: [tag1, tag2]
+concepts: [concept1, concept2]
+components: [component1, component2]
 sources_processed: ["[[02-processed/source-name/overview]]"]
 related: ["[[wiki-page-slug]]"]
 status: draft | reviewed | stable
@@ -337,15 +342,17 @@ When sources contradict each other:
 Before writing any frontmatter:
 1. Read `registry.md` Domains table — use only canonical domain names
 2. Read `registry.md` Tags table — use only canonical tags; normalize aliases
-3. If a genuinely new term is needed, propose it to the user before writing it to `registry.md`
-4. Never silently introduce non-canonical terms
+3. Read `registry.md` Concepts table — use only canonical concept slugs
+4. Read `registry.md` Components table — use only canonical component slugs
+5. If a genuinely new term is needed, propose it to the user before writing it to `registry.md`
+6. Never silently introduce non-canonical terms
 
 ---
 
 ## Lint checklist
 
 When running `/wiki-lint`, check:
-- [ ] All `domain:` and `tags:` values exist in `registry.md`
+- [ ] All `domain:`, `tags:`, `concepts:`, `components:` values exist in `registry.md`
 - [ ] No open `> [!REVIEW]` callouts in processed or wiki files
 - [ ] All wiki pages appear in `99-wiki/index.md`
 - [ ] No orphan wiki pages (pages with no inbound `related:` or `[[wikilink]]` references)
