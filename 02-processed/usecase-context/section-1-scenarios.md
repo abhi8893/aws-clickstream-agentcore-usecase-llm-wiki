@@ -3,8 +3,8 @@ type: processed-section
 title: "Deployment & Collection Scenarios (S1–S6)"
 parent: "[[overview]]"
 domain: [clickstream, web-app]
-tags: [google-tag-manager, aws-clickstream-sdk, google-analytics, cdp, server-side-tagging, client-side-tagging]
-concepts: [clickstream-sdk, server-side-tagging]
+tags: [google-tag-manager, aws-clickstream-sdk, google-analytics, cdp]
+concepts: [clickstream-sdk, server-side-tagging, client-side-tagging]
 status: draft
 created: 2026-05-31
 updated: 2026-05-31
