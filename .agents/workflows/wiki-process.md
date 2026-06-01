@@ -1,3 +1,7 @@
+---
+description: 
+---
+
 # /wiki-process
 
 Process one or more raw sources into structured documents in `02-processed/`.
@@ -28,6 +32,7 @@ Process one or more raw sources into structured documents in `02-processed/`.
       - Markdown: read full file
       - Chat: read full file
       - Website: read full file
+      - Brain Dump: Treat information as incomplete, and potentially in-accurate. Only use to structure and refine. DO NOT create hard facts based on these. 
       - If images are encountered: read them visually alongside text
 
    c. **Determine structure** — apply size rule:
