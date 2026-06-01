@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "skills": {
+    "agentcore-investigation": {
+      "source": "awslabs/mcp",
+      "sourceType": "github",
+      "skillPath": "src/cloudwatch-mcp-server/skills/agentcore-investigation/SKILL.md",
+      "computedHash": "3968186e8d4deaac845415c13b37989a21770d674907ed6ec89e3f2ca97ff344"
+    },
+    "aws-agentcore": {
+      "source": "hoodini/ai-agents-skills",
+      "sourceType": "github",
+      "skillPath": "skills/aws-agentcore/SKILL.md",
+      "computedHash": "87ab4c8d04ec93134c9e94b32ca61838cede2dea9f4632c69296faeae41e7a3f"
+    },
+    "aws-architecture-diagram": {
+      "source": "awslabs/agent-plugins",
+      "sourceType": "github",
+      "skillPath": "plugins/deploy-on-aws/skills/aws-architecture-diagram/SKILL.md",
+      "computedHash": "cac64bae15f97b982792937b94b3f5ae63e6669867c3e39328786e3dedcb3ebf"
+    },
+    "aws-messaging-and-streaming": {
+      "source": "aws/agent-toolkit-for-aws",
+      "sourceType": "github",
+      "skillPath": "skills/core-skills/aws-messaging-and-streaming/SKILL.md",
+      "computedHash": "5f67e1a255f200cf4dadbd7f268aad51e7fcfd882fd0ea9182518c207e8371cb"
+    },
+    "aws-observability": {
+      "source": "aws/agent-toolkit-for-aws",
+      "sourceType": "github",
+      "skillPath": "skills/core-skills/aws-observability/SKILL.md",
+      "computedHash": "bbc36e5d5aca0963f51b6ee5fc481ad302549569791dd1f81aecfb00d68c41fc"
+    },
+    "cloudwatch": {
+      "source": "itsmostafa/aws-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/cloudwatch/SKILL.md",
+      "computedHash": "3afe26de329a3f53cd3a963b37ca1f9758721ab108c2141295aef0c57597dd70"
+    },
+    "google-tag-manager": {
+      "source": "thatrebeccarae/claude-marketing",
+      "sourceType": "github",
+      "skillPath": "skills/google-tag-manager/SKILL.md",
+      "computedHash": "375faa0eb0736aa9d0435d60b97f71c59f75409e35942676c2aff6fce0424287"
+    },
+    "grafana-dashboards": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/grafana-dashboards/SKILL.md",
+      "computedHash": "8238b5574ea94e7dbcb23ddefd38f95162cc362178dcc592450474a2ec9bb0ba"
+    },
+    "grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
+      "computedHash": "784f0dbb7403b0f00324bce9a112f715342777a0daee7bbb7385f9c6f0a170ea"
+    },
+    "pdf": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/pdf/SKILL.md",
+      "computedHash": "cfbc539377088ca7e44a813b30c306327385bbd973cd7a721e1743f60837dd62"
+    },
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "computedHash": "5ea13a6d9f0d4bb694405d79acd00cadec0d21bb138c4dd10fcf3c500cb835c2"
+    }
+  }
+}
