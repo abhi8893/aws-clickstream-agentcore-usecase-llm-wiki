@@ -5,6 +5,12 @@ Format: `## [YYYY-MM-DD] <operation> | <title>`
 
 ---
 
+## [2026-06-01] process | components
+
+- Action: ingest + process
+- File: `01-raw/brain-dump/components/components.md`
+- Notes: Ingested and processed in one pass. Component taxonomy established in registry.md. Components field added to schema.md and all workflow commands.
+
 ## [2026-05-31] process | usecase-context
 
 - Action: process

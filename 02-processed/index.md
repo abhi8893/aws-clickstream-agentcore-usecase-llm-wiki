@@ -9,6 +9,17 @@ See `schema.md` for entry format.
 
 <!-- /wiki-process appends entries below this line -->
 
+## components
+
+- **filepath**: `02-processed/components/`
+- **filepath_raw**: `01-raw/brain-dump/components/components.md`
+- **description**: First-pass component taxonomy defining the 12 architectural units of the system, distinct from AWS services or implementation variants
+- **concepts**: [streaming-ingestion, otel-instrumentation, unified-dashboard]
+- **components**: [web-application, agentcore-application, tag-manager, cdp-platform, clickstream-ingestion-pipeline, clickstream-processing-pipeline, clickstream-storage, data-warehouse, agent-otel-instrumentation-infra, agent-otel-backend, agent-observability, metrics-dashboard]
+- **tags**: [kinesis-data-firehose, managed-streaming-kafka, lambda, glue, emr, cloudwatch, grafana, agentcore, opentelemetry, adot, x-ray, redshift]
+- **status**: `draft`
+- **wiki_pages**: `[]`
+
 ## usecase-context
 
 - **filepath**: `02-processed/usecase-context/`

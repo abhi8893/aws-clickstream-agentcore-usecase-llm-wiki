@@ -5,6 +5,13 @@ Format: `## [YYYY-MM-DD] <operation> | <title>`
 
 ---
 
+## [2026-06-01] process | components
+
+- Action: process
+- Source: `02-processed/components/`
+- Files created: overview.md (small source — overview only, no sections)
+- Notes: Brain dump establishing component taxonomy. 12 components added to registry. Components field added to all frontmatter schemas.
+
 ## [2026-05-31] process | usecase-context
 
 - Action: process
